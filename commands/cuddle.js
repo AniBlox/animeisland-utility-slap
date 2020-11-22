@@ -13,7 +13,7 @@ module.exports = {
 
         request({ url: "https://nekos.life/api/v2/img/cuddle", json: true }, function(error, response, body) {
                 let henEmbed = new Discord.RichEmbed()
-                    .setColor("#FF00FF")
+                    .setColor("#fcc203")
                     .setAuthor(message.author.username + " **cuddles** " + user.username)
                     .setImage(body.url)
             message.channel.send(henEmbed);

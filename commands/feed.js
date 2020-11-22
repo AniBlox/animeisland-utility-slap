@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const request = require('request');
 
 module.exports = {
-    name: 'cuddle',
+    name: 'feed',
     description: 'Some command description here.',
     guildOnly: false,
     nsfw: false,
@@ -11,10 +11,10 @@ module.exports = {
         const user = message.mentions.users.first() || message.author;
         if (!user) return message.channel.send("**Could not find the user**");
 
-        request({ url: "https://nekos.life/api/v2/img/cuddle", json: true }, function(error, response, body) {
+        request({ url: "https://nekos.life/api/v2/img/feed", json: true }, function(error, response, body) {
                 let henEmbed = new Discord.RichEmbed()
                     .setColor("#FF00FF")
-                    .setAuthor(message.author.username + " **cuddles** " + user.username)
+                    .setAuthor(message.author.username + " has fed " + user.username)
                     .setImage(body.url)
             message.channel.send(henEmbed);
         });
