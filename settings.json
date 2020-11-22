@@ -1,6 +1,6 @@
 {
-  "Token": INSERT YOUR OWN BOT TOKEN,
-  "Prefix": "%",
+  "Token": "Nzc1MjQ3MTE0ODQxNDg5NDE4.X6jjIw.dPhKxKhbR6TV46OVNDG3r1J1ies",
+  "Prefix": "/",
   "Streaming": true,
-  "Activity": "cat girls - Type %help"
+  "Activity": "Type %help"
 }

@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const request = require('request');
 
 module.exports = {
-    name: 'feed',
+    name: 'kitsune',
     description: 'Some command description here.',
     guildOnly: false,
     nsfw: false,
@@ -11,13 +11,13 @@ module.exports = {
         const user = message.mentions.users.first() || message.author;
         if (!user) return message.channel.send("User couldn't be found!");
 
-        request({ url: "https://nekos.life/api/v2/img/feed", json: true }, function(error, response, body) {
-            let henEmbed = new Discord.RichEmbed()
-                .setColor("#f096ea")
-                .setAuthor(message.author.username + " has fed " + user.username)
-                .setImage(body.url)
-                .setFooter("Powered By Cat");
+        request({ url: "https://nekos.life/api/v2/img/fox_girl", json: true }, function(error, response, body) {
+                let henEmbed = new Discord.RichEmbed()
+                    .setColor("#FF00FF")
+                    .setAuthor("Here is a cute Fox girl")
+                    .setImage(body.url)
             message.channel.send(henEmbed);
         });
+
     }
 };

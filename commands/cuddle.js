@@ -9,16 +9,15 @@ module.exports = {
 
     execute(bot, message, args) {
         const user = message.mentions.users.first() || message.author;
-        if (!user) return message.channel.send("User couldn't be found!");
+        if (!user) return message.channel.send("**Could not find the user**");
 
         request({ url: "https://nekos.life/api/v2/img/cuddle", json: true }, function(error, response, body) {
                 let henEmbed = new Discord.RichEmbed()
                     .setColor("#FF00FF")
-                    .setAuthor(message.author.username + " has cuddle " + user.username)
+                    .setAuthor(message.author.username + " **cuddles** " + user.username)
                     .setImage(body.url)
-                    .setFooter("Powered By Cat");
-                message.channel.send(henEmbed);
-            }
-        );
+            message.channel.send(henEmbed);
+        });
+
     }
 };

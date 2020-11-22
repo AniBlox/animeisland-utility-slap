@@ -16,10 +16,8 @@ module.exports = {
                     .setColor("#f096ea")
                     .setAuthor("Wallpapers!")
                     .setImage(body.url)
-                    .setFooter("Powered By Cat");
-                message.channel.send(henEmbed);
-            }
-        );
+            message.channel.send(henEmbed);
+        });
 
     }
 };
