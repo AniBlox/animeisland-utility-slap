@@ -1,0 +1,6 @@
+{
+  "Token": INSERT YOUR OWN BOT TOKEN,
+  "Prefix": "%",
+  "Streaming": true,
+  "Activity": "cat girls - Type %help"
+}
