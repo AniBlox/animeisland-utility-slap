@@ -3,7 +3,7 @@ const request = require('request');
 const fetch = require("node-fetch");
 
 module.exports = {
-    name: 'cuddle',
+    name: 'hug',
     description: 'Some command description here.',
     guildOnly: false,
     nsfw: false,
@@ -14,8 +14,8 @@ module.exports = {
 
         request({ url: "https://waifu.pics/api/sfw/hug", json: true }, function(error, response, body) {
                 let henEmbed = new Discord.RichEmbed()
-                    .setColor("#fcc203")
-                    .setAuthor(message.author.username + " **cuddles** ")
+                    .setColor("#03e3fc")
+                    .setAuthor(message.author.username + " has huged " + user.username)
                     .setImage(body.url)
             message.channel.send(henEmbed);
         });
