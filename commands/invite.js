@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 module.exports = {
-    name: 'invite',
+    name: 'inviffgghrthdfgyhgjhgertkmygftjhkmfdrfulyftwesdkkjjhgsxte',
     description: 'Some command description here.',
     guildOnly: false,
     nsfw: false,

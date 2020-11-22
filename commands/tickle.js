@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const request = require('request');
 
 module.exports = {
-    name: 'baka',
+    name: 'tickle',
     description: 'Some command description here.',
     guildOnly: false,
     nsfw: false,
@@ -14,7 +14,7 @@ module.exports = {
         request({ url: "https://nekos.life/api/v2/img/tickle", json: true }, function(error, response, body) {
                 let henEmbed = new Discord.RichEmbed()
                     .setColor("#03e3fc")
-                    .setAuthor(message.author.username + " is tickling " + user.username)
+                    .setAuthor(message.author.username + " tickles " + user.username)
                     .setImage(body.url)
             message.channel.send(henEmbed);
         });
