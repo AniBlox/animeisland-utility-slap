@@ -1,6 +1,7 @@
 dependencies:
   discord.js: 11.6.4
   node-fetch: 2.6.1
+  snek-node: 0.0.2
   waifu.js: 1.0.0
 devDependencies:
   request: 2.88.2
@@ -497,6 +498,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
+  /snek-node/0.0.2:
+    dependencies:
+      node-fetch: 2.6.1
+    dev: false
+    resolution:
+      integrity: sha512-v3DSVgBelsjYTAj9PZj44zJ4P9pcpXKwMflxyK+rwzGkFIS4LqQapuyX8w0c4o0HOyBMNXtPH4DWucAoMh/1XQ==
   /snekfetch/3.6.4:
     deprecated: use node-fetch instead
     dev: false
@@ -586,4 +593,5 @@ specifiers:
   discord.js: ^11.5.1
   node-fetch: ^2.6.1
   request: ^2.88.2
+  snek-node: ^0.0.2
   waifu.js: ^1.0.0
