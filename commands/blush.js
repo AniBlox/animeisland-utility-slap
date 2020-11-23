@@ -15,7 +15,7 @@ module.exports = {
         request({ url: "https://waifu.pics/api/sfw/blush", json: true }, function(error, response, body) {
                 let henEmbed = new Discord.RichEmbed()
                     .setColor("#03e3fc")
-                    .setAuthor(message.author.username + " blushed embarrassed " + user.username)
+                    .setAuthor(message.author.username + " blushed embarrassed by " + user.username)
                     .setImage(body.url)
             message.channel.send(henEmbed);
         });
