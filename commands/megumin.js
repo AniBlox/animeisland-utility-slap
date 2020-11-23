@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const request = require('request');
 
 module.exports = {
-    name: 'wallpaper',
+    name: 'megumin',
     description: 'Some command description here.',
     guildOnly: false,
     nsfw: false,
@@ -11,10 +11,10 @@ module.exports = {
         const user = message.mentions.users.first() || message.author;
         if (!user) return message.channel.send("User couldn't be found!");
 
-        request({ url: "https://nekos.life/api/v2/img/wallpaper", json: true }, function(error, response, body) {
+        request({ url: "https://waifu.pics/api/sfw/megumin", json: true }, function(error, response, body) {
                 let henEmbed = new Discord.RichEmbed()
-                    .setColor("#f096ea")
-                    .setAuthor("Wallpapers!")
+                    .setColor("#FF00FF")
+                    .setAuthor("here is megumin!")
                     .setImage(body.url)
             message.channel.send(henEmbed);
         });
